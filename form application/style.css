@@ -1,0 +1,93 @@
+html {
+  background-color: #37382F;
+  background-image: url(https://2017.awiclass.monoame.com/img/form_ground.svg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: 0 80%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+form {
+  color: white;
+  background-color: #3c3e34;
+  padding: 30px 100px;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  letter-spacing: 1px;
+  border-bottom: 5px solid #DFFF47;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+}
+form > * {
+  margin-bottom: 15px;
+}
+form img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 120px;
+}
+form h2 {
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 20px;
+}
+form input, form textarea, form select {
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 0px;
+  opacity: 0.9;
+  outline: none;
+}
+form input::-moz-placeholder, form textarea::-moz-placeholder, form select::-moz-placeholder {
+  color: rgba(55, 56, 47, 0.4);
+}
+form input:-ms-input-placeholder, form textarea:-ms-input-placeholder, form select:-ms-input-placeholder {
+  color: rgba(55, 56, 47, 0.4);
+}
+form input::placeholder, form textarea::placeholder, form select::placeholder {
+  color: rgba(55, 56, 47, 0.4);
+}
+form select, form input[type=radio] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+form .recommend {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+form .recommend label {
+  margin-right: 40px;
+  margin-left: 5px;
+}
+form input[type=radio] {
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+form input[type=radio]:checked {
+  background-color: #DFFF47;
+  border-color: #DFFF47;
+}
+form button {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}

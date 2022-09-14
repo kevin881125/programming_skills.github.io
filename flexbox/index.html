@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - flexbox</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>flex入門</h1>
+<hr>
+<div class="flexrow">
+  <div>
+    <h2>使用flex控制份數</h2>
+    <div class="flexcard">
+      <div class="left">L 6</div>
+      <div class="mid">M 120px</div>
+      <div class="right">R 4</div>
+    </div>
+  </div>
+  <div>
+    <h2>使用flex控制份數</h2>
+    <div class="flexcard flexcard2">
+      <div class="left">L 6</div>
+      <div class="mid">M 120px</div>
+      <div class="right">R 4</div>
+    </div>
+  </div>
+</div>
+<h2>flex-grow 控制膨脹分配</h2>
+<div class="flexcard flexcard3">
+  <div class="left">L 400px</div>
+  <div class="mid">M 300px</div>
+  <div class="right">R 200px(flex-grow:0)</div>
+</div>
+<h2>flex-shrink 控制縮減分配</h2>
+<div class="flexcard flexcard4">
+  <div class="left">L 400px(flex-shrink:0)</div>
+  <div class="mid">M 300px</div>
+  <div class="right">R 200px</div>
+</div>
+<h2>flex順序 flex-direction:column-reverse/row-reverse</h2>
+<div class="flexrow">
+  <div>
+    <h2>column-reverse</h2>
+    <div class="flexcard flexcard5">
+      <div class="left">L 6</div>
+      <div class="mid">M 120px</div>
+      <div class="right">R 4</div>
+    </div>
+  </div>
+  <div>
+    <h2>row-reverse</h2>
+    <div class="flexcard flexcard6">
+      <div class="left">L 6</div>
+      <div class="mid">M 120px</div>
+      <div class="right">R 4</div>
+    </div>
+  </div>
+</div>
+<h2>物件排列</h2>
+<div class="items">
+  <div class="mainaxis">主軸(justify)</div>
+  <div class="subaxis">副軸(align)</div>
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>

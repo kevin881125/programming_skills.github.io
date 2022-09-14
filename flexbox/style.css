@@ -1,0 +1,96 @@
+.flexrow{
+  display:flex;
+}
+.flexrow>div{
+  flex:1;
+}
+.flexcard{
+  border: 3px solid #000;
+  width: 400px;
+  height: 200px;
+  display:flex;
+  font-size: 30px;
+}
+.left{
+  flex:6;
+  background-color: #ffd428;
+}
+.mid{
+  flex:120px;
+  flex-shrink:0;
+  flex-grow:0;
+  background-color: #ffa228;
+}
+.right{
+  flex:4;
+  background-color: #ff541c;
+}
+.flexcard2{
+  flex-direction: column;
+}
+.flexcard3,.flexcard4{
+  width: 100%;
+}
+.flexcard3 .left{
+  flex:400px;
+}
+.flexcard3 .mid{
+  flex:300px;
+}
+.flexcard3 .right{
+  flex:200px;
+  flex-grow:0;
+}
+.flexcard4 .left{
+  flex:400px;
+  flex-shrink:0;
+}
+.flexcard4 .mid{
+  flex:300px;
+}
+.flexcard4 .right{
+  flex:200px;
+}
+.flexcard5{
+  flex-direction: row-reverse;
+}
+/* .flexcard5 .mid{
+  order:-1;
+} */
+.flexcard6{
+  flex-direction: column-reverse;
+}
+.items{
+  width: 800px;
+  height: 600px;
+  border: 1px solid #000;
+  position: relative;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  align-items:center;
+}
+.mainaxis,.subaxis{
+  position:absolute;
+  width: 100%;
+  height: 0;
+  border: 1px solid red;
+  top:50%;
+}
+.subaxis{
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  border-color: blue;
+}
+.items .item{
+  width: 80px;
+  height: 80px;
+  background-color: #ccc;
+  font-size: 30px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border: 1px solid #bbb;
+}

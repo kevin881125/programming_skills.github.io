@@ -1,0 +1,59 @@
+$(".btn1").click(function(){
+  $(".rect1").show(500)
+})
+$(".btn1e").click(function(){
+  $(".rect1").hide(500)
+})
+$(".btn2").click(function(){
+  $(".rect2").fadeIn(500)
+})
+$(".btn2e").click(function(){
+  $(".rect2").fadeOut(500)
+})
+$(".btn3").click(function(){
+  $(".rect3").slideDown(500)
+})
+$(".btn3e").click(function(){
+  $(".rect3").slideUp(500)
+})
+
+$(".btn4").click(function(){
+  $(".rect4").animate({
+    left:"200px",
+    height:"50px"
+  },{duration:500})
+  .animate({
+    left:"+=100px"
+  })
+  .delay(1000)
+  .animate({
+    left:"+=100px",
+    backgroundColor:"red"
+  },{
+    duration:500,
+    complete:function(){
+      $(".rect4").text("載入完畢")
+    }
+  })
+  .animate({
+    left:"+=100px"
+  })
+  .animate({
+    width:"50px",
+    height:"50px",
+    borderRadius:"50%"
+  })
+  .animate({
+    left:"0px"
+  },2000,"easeInOutElastic")
+})
+
+$(".btn5").click(function(){
+  $(".rect5").velocity({
+    translateX: "30px",
+    rotateZ:["45deg","120deg"]
+  })
+})
+$(".btn5e").click(function(){
+  $(".rect5").velocity("reverse")
+})

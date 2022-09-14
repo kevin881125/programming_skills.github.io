@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - 輸入表單</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<form action="https://2017.awiclass.monoame.com/api/demo/feedback" method="post"><img src="https://2017.awiclass.monoame.com/img/form_leaf.svg" alt=""/>
+  <h2>請讓我們變更好</h2>
+  <input name="name" placeholder="你的名子"/>
+  <select name="option">
+    <option value="" disabled="disabled" selected="selected">使用產品</option>
+    <option value="茉莉花茶">茉莉花茶</option>
+    <option value="白毫烏龍">白毫烏龍</option>
+    <option value="伯爵紅茶">伯爵紅茶</option>
+  </select>
+  <textarea name="commend" placeholder="使用心得" rows="8"></textarea>
+  <div class="recommend">
+    <input type="radio" name="recommend" value="yes"/>
+    <label>會推薦給朋友</label>
+    <input type="radio" name="recommend" value="no"/>
+    <label>不推薦</label>
+    <input type="hidden" name="json" value=""/>
+  </div>
+  <div class="feedback"></div>
+  <button>送出意見</button>
+  <button class="ajaxbtn">送出意見(ajax)</button>
+</form>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
